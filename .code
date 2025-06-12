@@ -124,19 +124,19 @@
     <div class="container">
         <header>
             <h1>Ca sĩ AMEE</h1>
-            <img src="amee.jpg" alt="AMEE" class="profile">
+            <img src="https://www.facebook.com/photo/?fbid=1019012879595435&set=a.323956312434432" alt="AMEE" class="profile">
         </header>
 
         <h2>Tiểu sử</h2>
         <div class="clearfix">
-            <img src="amee1.webp" alt="AMEE thời trẻ" class="img-inline img-left">
+            <img src="https://www.facebook.com/photo/?fbid=1227016718795049&set=pcb.1227010648795656" alt="AMEE thời trẻ" class="img-inline img-left">
             <p><strong>AMEE</strong>, tên thật là <strong>Trần Huyền My</strong>, sinh năm 2000, là một nữ ca sĩ trẻ nổi bật tại Việt
                 Nam. Cô được biết đến với phong cách nhẹ nhàng, đáng yêu và chất giọng ngọt ngào.</p>
         </div>
 
         <h2>MV nổi bật</h2>
         <div class="video">
-            <iframe width="80%" height="500" src="mvamee.mp4" title="AMEE - MỘNG YU" frameborder="0"
+            <iframe width="80%" height="500" src="https://www.youtube.com/watch?v=09Mh7GgUFFA&list=RD09Mh7GgUFFA&start_radio=1" title="AMEE - MỘNG YU" frameborder="0"
                 allowfullscreen></iframe>
         </div>
 
