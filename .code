@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ca sĩ AMEE</title>
+
+    <!-- Google Font "Baloo 2" -->
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #e3d5df;
+            font-family: 'Baloo 2', cursive, 'Segoe UI', sans-serif;
+            margin: 0;
+            padding: 0;
+            font-size: 18px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+            background-color: #edc9d9;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header {
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        header h1 {
+            color: #d63384;
+            font-size: 42px;
+            letter-spacing: 1px;
+        }
+
+        h2 {
+            color: #c2185b;
+            font-size: 28px;
+            border-bottom: 2px solid #f8bbd0;
+            padding-bottom: 5px;
+            margin-top: 30px;
+        }
+
+        p,
+        li {
+            line-height: 1.8;
+            font-size: 25px;
+            color: #1e1c1c;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #777;
+            font-size: 16px;
+        }
+
+        a {
+            color: #e91e63;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: #ad1457;
+        }
+
+        .video {
+            text-align: center;
+            margin: 25px 0;
+        }
+
+        img.profile {
+            display: block;
+            margin: 0 auto;
+            width: 250px;
+            border-radius: 40%;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Hình ảnh đan xen */
+        .img-inline {
+            border-radius: 12px;
+            max-width: 100%;
+            height: auto;
+            margin: 10px 0;
+            padding: 4px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+
+
+        .img-left {
+            float: left;
+            margin: 10px 20px 10px 0;
+            width: 25%;
+        }
+
+        .img-right {
+            float: right;
+            margin: 10px 0 10px 20px;
+            width: 25%;
+        }
+
+        .clearfix::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Ca sĩ AMEE</h1>
+            <img src="amee.jpg" alt="AMEE" class="profile">
+        </header>
+
+        <h2>Tiểu sử</h2>
+        <div class="clearfix">
+            <img src="amee1.webp" alt="AMEE thời trẻ" class="img-inline img-left">
+            <p><strong>AMEE</strong>, tên thật là <strong>Trần Huyền My</strong>, sinh năm 2000, là một nữ ca sĩ trẻ nổi bật tại Việt
+                Nam. Cô được biết đến với phong cách nhẹ nhàng, đáng yêu và chất giọng ngọt ngào.</p>
+        </div>
+
+        <h2>MV nổi bật</h2>
+        <div class="video">
+            <iframe width="80%" height="500" src="mvamee.mp4" title="AMEE - MỘNG YU" frameborder="0"
+                allowfullscreen></iframe>
+        </div>
+
+        <h2>Album / Bài hát nổi bật</h2>
+        <div class="clearfix">
+            <img src="mvdautay.jpg" alt="DreAMEE Album" class="img-inline img-right">
+            <ul>
+                <li><a href="https://www.youtube.com/watch?v=iE52-XXnQqs" target="_blank">Anh Nhà Ở Đâu Thế</a><br></li>
+                <li>DreAMEE (Album đầu tay)</li>
+                <li>Sao Anh Chưa Về Nhà</li>
+                <li>Yêu Thì Yêu Không Yêu Thì Yêu</li>
+                <li>Shay Nắnggg</li>
+            </ul>
+        </div>
+
+        <h2>Kết nối mạng xã hội</h2>
+        <div class="clearfix">
+            <img src="amee.jpg" alt="AMEE kết nối mạng xã hội" class="img-inline img-left">
+            <p>
+                👉 <a href="https://www.facebook.com/ameest319" target="_blank">Facebook của EmBé</a><br>
+                👉 <a href="https://www.instagram.com/ameemee_m/" target="_blank">Ig của EmBé</a><br>
+                👉 <a href="https://www.youtube.com/channel/UCCF91sLycgCnTMUN6nNwEGQ" target="_blank">Diu túp nè</a>
+            </p>
+        </div>
+
+        <footer>
+            &copy; 2025 Trang web về AMEE - Người thực hiện: Nguyễn Quang Duy
+        </footer>
+    </div>
+</body>
+
+</html>
