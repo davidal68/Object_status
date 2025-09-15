@@ -51,6 +51,11 @@ cd 推理平台
 npx http-server -p 3000 -c-1 --cors
 ```
 
+<img width="1899" height="881" alt="d08b48daa1b4a38dc5bbf0f06b64ec8e" src="https://github.com/user-attachments/assets/09b9b63a-9d90-4cf4-a487-8b17ed6bc738" />
+
+<img width="1905" height="899" alt="17e5e641f397a39b3037c198703316cb" src="https://github.com/user-attachments/assets/fe5b49c4-3508-4588-b213-594500b70681" />
+
+
 ## API接口
 
 ### 目标检测接口
@@ -64,6 +69,11 @@ npx http-server -p 3000 -c-1 --cors
 - **返回**: 带检测框的图片
 
 <img width="1486" height="681" alt="30e3287f94449986ca00ea9ac1ce850e" src="https://github.com/user-attachments/assets/a1b04b39-0d35-4d50-b81d-7cffb77278f2" />
+
+
+## 推理的结果
+<img width="1093" height="861" alt="024cb13d6dc49ba650877fcda547553a" src="https://github.com/user-attachments/assets/ee6d1ba6-e019-4c9c-918f-396fe8201252" />
+
 
 
 ## 开发说明
