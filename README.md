@@ -63,6 +63,9 @@ npx http-server -p 3000 -c-1 --cors
 - **参数**: `image` (MultipartFile)
 - **返回**: 带检测框的图片
 
+<img width="1486" height="681" alt="30e3287f94449986ca00ea9ac1ce850e" src="https://github.com/user-attachments/assets/a1b04b39-0d35-4d50-b81d-7cffb77278f2" />
+
+
 ## 开发说明
 
 ### 后端技术栈
