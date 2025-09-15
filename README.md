@@ -30,6 +30,10 @@
 <img width="1486" height="681" alt="30e3287f94449986ca00ea9ac1ce850e" src="https://github.com/user-attachments/assets/a1b04b39-0d35-4d50-b81d-7cffb77278f2" />
 
 
+## 原图
+<img width="800" height="800" alt="0e42e07fd45d21a5484a83e966936a9" src="https://github.com/user-attachments/assets/acb885a3-1ae9-43f4-8935-0da4f0aae934" />
+
+
 ## 推理的结果
 <img width="1093" height="861" alt="024cb13d6dc49ba650877fcda547553a" src="https://github.com/user-attachments/assets/ee6d1ba6-e019-4c9c-918f-396fe8201252" />
 
