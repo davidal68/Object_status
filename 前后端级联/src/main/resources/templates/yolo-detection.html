@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YOLO目标检测平台</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+        }
+        .upload-section {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            border: 2px dashed #007bff;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #555;
+        }
+        input[type="file"] {
+            width: 100%;
+            padding: 10px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            background: white;
+        }
+        select {
+            padding: 10px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+        button {
+            padding: 12px 24px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .alert {
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
+            background-color: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        .result-section {
+            margin-top: 30px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+        }
+        .image-result {
+            max-width: 100%;
+            height: auto;
+            border: 3px solid #28a745;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .json-result {
+            background: #e9ecef;
+            padding: 15px;
+            border-radius: 5px;
+            border: 1px solid #ced4da;
+            overflow-x: auto;
+            font-family: 'Courier New', monospace;
+            font-size: 14px;
+            white-space: pre-wrap;
+        }
+        .section-title {
+            color: #007bff;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 YOLO目标检测平台</h1>
+        
+        <div class="upload-section">
+            <h2 class="section-title">上传图像进行检测</h2>
+            <form th:action="@{/yolo/inference}" method="post" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="image">选择图像文件：</label>
+                    <input type="file" id="image" name="image" accept="image/*" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="format">输出格式：</label>
+                    <select id="format" name="format">
+                        <option value="image">可视化图像（带检测框）</option>
+                        <option value="json">JSON数据格式</option>
+                    </select>
+                </div>
+                
+                <button type="submit">🎯 开始目标检测</button>
+            </form>
+        </div>
+        
+        <div th:if="${message}" class="alert">
+            📝 <span th:text="${message}"></span>
+        </div>
+        
+        <div th:if="${imageResult}" class="result-section">
+            <h2 class="section-title">📊 检测结果图像</h2>
+            <img th:src="${imageResult}" alt="YOLO目标检测结果" class="image-result">
+        </div>
+        
+        <div th:if="${jsonResult}" class="result-section">
+            <h2 class="section-title">📋 检测结果数据</h2>
+            <pre class="json-result" th:text="${jsonResult}"></pre>
+        </div>
+        
+        <div class="info-section">
+            <h2 class="section-title">ℹ️ 使用说明</h2>
+            <ul>
+                <li>上传JPEG、PNG格式的图像文件</li>
+                <li>选择"可视化图像"可查看带检测框的结果图片</li>
+                <li>选择"JSON数据"可获取详细的检测数据</li>
+                <li>确保YOLO推理服务运行在 localhost:5000</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
